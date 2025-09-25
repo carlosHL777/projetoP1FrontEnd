@@ -1,0 +1,159 @@
+* {
+    margin: 0; /* tirando margem */
+    padding: 0;
+    outline: 0; 
+    border: 0;
+    text-decoration: none;
+    transition: 0.2s linear; /* animação nos elementos do site */
+    list-style-type: none;
+}
+
+section {
+    padding: 30px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* header abaixo */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border: none;
+    background-color: #F24949;
+    max-height: 60px;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar a {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #fff;
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+    font-family: "Montserrat", serif;
+    
+}
+
+.navbar a:last-child {
+    border-right: none;
+}
+
+.navbar a:hover {
+    color: #400A1E;
+    font-size: 19px;
+}
+
+.header img {
+    height: 30px;
+    width: auto;  
+    max-width: 100px;;
+}
+
+/* home abaixo */
+
+.btn-iniciar {
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    background: #F28705;
+    color: #fff; 
+    font-size: 25px;
+    padding: 30px 60px;
+    border-radius: 5%;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.btn-iniciar:hover {
+    background: #F24949;
+    box-shadow: 0px 0px 5px #F24949;
+    color: #400A1E;
+    font-size: 28px;
+}
+
+.pag-home section {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.pag-home {
+    background: linear-gradient(to left, #8C4280, #400A1E);
+    background-size: cover;
+    height: 95vh;
+}
+
+.content {
+    max-width: 60px;
+}
+
+.content h1 {
+    font-family: "Darker Grotesque", sans-serif;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+    width: 500px;
+}
+ 
+/* cards abaixo */
+.titulo {
+    font-family: "Darker Grotesque", sans-serif;
+    color: #400A1E;
+    font-weight: 800;
+    font-size: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.ferramentas {
+    background-color: #F28705;
+    background-size: cover;
+    height: 100vh;
+}
+
+.ferramentas .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 10px;
+}
+
+.ferramentas section {
+    padding-top: 22vh;
+}
+
+.ferramentas .box-container .card {
+    font-family: "Montserrat", serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 25px;
+    background-color: #400A1E;
+    border-radius: 7%;
+    color: #fff;
+    height: 150px;
+}
+
+.ferramentas .box-container .card:hover {
+    background-color: #F24949;
+    color: #400A1E;
+    font-weight: 500;
+}
+
+
+
+.ferramentas .box-container .card h3 {
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
