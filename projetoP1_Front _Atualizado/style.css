@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    /* tirando margem */
+    padding: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    transition: 0.2s linear;
+    /* animação nos elementos do site */
+    list-style-type: none;
+}
+
+section {
+    padding: 30px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* header abaixo */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border: none;
+    background-color: #F24949;
+    max-height: 60px;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar a {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #fff;
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+    font-family: "Montserrat", serif;
+
+}
+
+.navbar a:last-child {
+    border-right: none;
+}
+
+.navbar a:hover {
+    color: #400A1E;
+    font-size: 19px;
+}
+
+.header img {
+    height: 30px;
+    width: auto;
+    max-width: 100px;
+}
+
+/* home abaixo */
+
+.btn-iniciar {
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    background: #F28705;
+    color: #fff;
+    font-size: 25px;
+    padding: 30px 60px;
+    border-radius: 5%;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.7));
+}
+
+.btn-iniciar:hover {
+    background: #F24949;
+    box-shadow: 0px 0px 5px #F24949;
+    color: #400A1E;
+    font-size: 28px;
+}
+
+.pag-home section {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.pag-home {
+    background: linear-gradient(to left, #8C4280, #400A1E);
+    background-size: cover;
+    height: 95vh;
+}
+
+.content {
+    max-width: 60px;
+}
+
+.content h1 {
+    font-family: "Darker Grotesque", sans-serif;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+    width: 500px;
+    padding-bottom: 30px;
+}
+
+/* cards abaixo */
+.titulo {
+    font-family: "Darker Grotesque", sans-serif;
+    color: #400A1E;
+    font-weight: 800;
+    font-size: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.ferramentas {
+    background-color: #F28705;
+    background-size: cover;
+    height: 100vh;
+}
+
+.ferramentas .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 10px;
+}
+
+.ferramentas section {
+    padding-top: 22vh;
+}
+
+.ferramentas .box-container .card {
+    font-family: "Montserrat", serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    background-color: #400A1E;
+    border-radius: 7%;
+    color: #fff;
+    height: 150px;
+    width: 340px;
+    max-width: 340px;
+    max-height: 150px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.7));
+}
+
+.ferramentas .box-container .card svg {
+    fill: #fff;
+}
+
+.ferramentas .box-container .card:hover {
+    background-color: #F24949;
+    color: #400A1E;
+    font-weight: 500;
+    height: 160px;
+    width: 350px;
+    max-width: 350px;
+    max-height: 160px;
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 10px rgb(173, 35, 35))
+}
+
+.ferramentas .box-container .card:hover svg {
+    fill: #400A1E;
+}
+
+.ferramentas .box-container .card h3 {
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+/* avaliações */
+
+.nota-usuarios {
+    background-color: #400A1E;
+    height: 100vh;
+}
+
+.titulo-avali {
+    font-family: "Darker Grotesque", sans-serif;
+    color: #F24949;
+    font-weight: 800;
+    font-size: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-top: 30px;
+    align-self: center;
+}
+
+.nota-usuarios .caixas-notas {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.nota-usuarios img {
+    padding-top: 10px;
+    border-radius: 50%;
+    height: 120px;
+}
+
+.nota-usuarios .estrela {
+    padding-bottom: 5px;
+}
+
+
+
+.nota-usuarios section {
+    padding-top: 22vh;
+}
+
+.nota-usuarios p {
+    padding-bottom: 10px;
+}
+
+.nota-usuarios .card-notas {
+    font-family: "Montserrat", serif;
+    font-size: 15px;
+    max-width: 300px;
+    height: 300px;
+    max-height: 300px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(242, 73, 73);
+    border-radius: 7%;
+    color: #fff;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.7));
+}
+
+.nota-usuarios .card-notas h3 {
+    font-family: "Darker Grotesque", sans-serif;
+    color: #400A1E;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.nota-usuarios .card-notas:hover {
+    background-color: #F28705;
+    color: #400A1E;
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 330px;
+    height: 310px;
+    max-height: 310px;
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 10px rgb(242, 73, 73));
+}
+
+.nota-usuarios .card-notas svg {
+    fill: goldenrod;
+}
+
+.nota-usuarios .card-notas:hover svg {
+    fill: #400A1E;
+}
+
+.nota-usuarios .estrela:hover {
+    fill: #400A1E;
+}
+
+/* sobre nós */
+
+.sobre-nos {
+    background: linear-gradient(to top, #441e3e, #400A1E);
+    height: 80vh;
+}
+
+.sobre-nos img {
+    height: 200px;
+    width: auto;
+    max-height: 200px;
+}
+
+.sobre-nos .titulo-sobre {
+    font-family: "Darker Grotesque", sans-serif;
+    color: #F28705;
+    font-weight: 800;
+    justify-self: center;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.sobre-nos .bloco-sobre {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    height: 500px;
+    width: 1200px;
+    background-color: rgba(242, 73, 73, 0.644);
+    border: 0.2px solid white;
+    border-radius: 3%;
+    filter: drop-shadow(5px 5px 10px rgb(0, 0, 0));
+}
+
+.sobre-nos .titulo-sobreum {
+    font-size: 35px;
+    padding-bottom: 10px;
+    font-family: "Darker Grotesque", sans-serif;
+    color: #F28705;
+    font-weight: 800;
+}
+
+.sobre-nos .bloco-sobre .conteudo-sobre {
+    font-size: 20px;
+    padding: 15px;
+    font-family: "Montserrat", serif;
+    color: #fff;
+}
+
+.sobre-nos .bloco-sobre .conteudo-sobre span {
+    color: #400A1E;
+    font-weight: 700;
+    text-shadow: 0 0 5px #F28705;
+}
+
+.sobre-nos .titulo-sobredois {
+    font-size: 35px;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    font-family: "Darker Grotesque", sans-serif;
+    color: #F28705;
+    font-weight: 800;
+}
